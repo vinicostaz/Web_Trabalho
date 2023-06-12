@@ -17,7 +17,7 @@
 
         if (id !== null) {
 
-            axios.get('http://localhost:3000/usaurio/'+ id +'')
+            axios.get('http://localhost:3000/produto/'+ id +'')
             .then(function (response) {
                 document.getElementById('_id').value            =   response.data._id;
                 document.getElementById('Preço').value      =   response.data.Preço;
