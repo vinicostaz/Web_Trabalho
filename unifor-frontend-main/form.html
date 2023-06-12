@@ -73,7 +73,7 @@
                     <input type="hidden" class="form-control" id="_id">
                     <div class="mb-3">
                         <label for="Preço" class="form-label">Preço</label>
-                        <input type="text" class="form-control" id="Preço">
+                        <input type="number" class="form-control" id="Preço">
                         
                     </div>
                     <div class="mb-3">
@@ -113,7 +113,7 @@
 
                 axios.post("http://localhost:3000/produto", {
 
-                    Preçõ: parseInt(Preço),
+                    Preço: parseInt(Preço),
                     nome: nome,
                     Descrição: Descrição
 
@@ -132,7 +132,7 @@
 
             } else {
                 
-                axios.put('http://localhost:3000/produto/'+ _id +'', {
+                axios.put("http://localhost:3000/produto" + _id +'', {
 
                     Preço: parseInt(Preço),
                     nome: nome,
